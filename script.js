@@ -27,6 +27,8 @@ function writeText(text) {
 
     textArea.insertAdjacentText("beforeend", text)
     textArea.appendChild(document.createElement('br'))
+
+    textArea.scrollTop = textArea.scrollHeight;
 }
 
 function processInput() {

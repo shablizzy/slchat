@@ -37,6 +37,8 @@ body {
 
 #text-area {
     color: white;
+    max-height: 90%;
+    overflow-y: auto;
     overflow-wrap: break-word;
     line-height: 115%;
 }
