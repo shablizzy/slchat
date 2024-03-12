@@ -1,0 +1,58 @@
+:root {
+    --layer_0_rgba: rgba(18, 18, 18, 0.25);
+    --layer_1_rgba: rgb(72, 70, 70);
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+body {
+    background-image: url(assets/background.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.chatbox {
+    background: rgba(var(--layer_0_rgba));
+    box-shadow: 0 8px 32px 0 rgba(173, 174, 184, 0.397);
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 20px;
+
+    width: 80%;
+    height: 80%;
+    margin: auto;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#text-area {
+    color: white;
+    overflow-wrap: break-word;
+    line-height: 115%;
+}
+
+.text-bar {
+    background: rgba(var(--layer_1_rgba));
+    color: white;
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 10px;
+
+    position: absolute;
+    width: 70%;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
