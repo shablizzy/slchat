@@ -1,4 +1,4 @@
-import {joinRoom as trystero} from './trystero-torrent.min.js'
+import {joinRoom as trystero} from './depend/trystero-torrent.min.js'
 
 const defaultRoom = trystero({appId: 'slchat'}, 'default')
 
